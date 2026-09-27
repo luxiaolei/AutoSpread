@@ -1,0 +1,62 @@
+version: 1
+# Capability inventory only. Never store API keys, cookies, passwords, or OAuth tokens here.
+# interface examples: api | mcp | cli | sdk | browser | plugin
+
+execution_preference:
+  - official_api_or_mcp
+  - provider_cli
+  - sdk_or_code
+  - ego_browser
+  - human
+
+providers:
+  github:
+    available: false
+    interfaces: []
+    scope: []
+    notes: ""
+  cloudflare:
+    available: false
+    interfaces: []
+    scope: []
+    notes: ""
+  vercel:
+    available: false
+    interfaces: []
+    scope: []
+    notes: ""
+  supabase:
+    available: false
+    interfaces: []
+    scope: []
+    notes: ""
+  stripe:
+    available: false
+    interfaces: []
+    scope: []
+    notes: ""
+  product_analytics:
+    available: false
+    interfaces: []
+    scope: []
+    notes: ""
+  search_console:
+    available: false
+    interfaces: []
+    scope: []
+    notes: ""
+  social_publishing:
+    available: false
+    interfaces: []
+    scope: []
+    notes: ""
+  content_and_video:
+    available: false
+    interfaces: []
+    scope: []
+    notes: ""
+  ego_browser:
+    available: false
+    interfaces: [browser]
+    scope: []
+    notes: "Logged-in state is not itself an authorization boundary."

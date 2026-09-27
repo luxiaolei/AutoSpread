@@ -1,19 +1,23 @@
 {
   "name": "autospread",
-  "version": "0.1.0",
-  "description": "A lightweight, bilingual growth operating system for Codex agents.",
-  "author": "luxiaolei",
-  "license": "MIT",
-  "skills": [
-    "skills/autospread",
-    "skills/project-audit",
-    "skills/customer-research",
-    "skills/seo-geo",
-    "skills/conversion-optimization",
-    "skills/content-video",
-    "skills/channel-operations",
-    "skills/analytics-review",
-    "skills/lifecycle-operations",
-    "skills/paid-acquisition"
-  ]
+  "version": "0.2.0",
+  "description": "A lightweight bilingual growth operating system for agents: diagnose constraints, choose playbooks, act within autonomy policy, and verify outcomes.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AutoSpread",
+    "shortDescription": "Product-led growth operator skills",
+    "longDescription": "Diagnose the biggest product-growth constraint, choose the smallest useful playbook, execute with connected tools inside an autonomy policy, and verify business outcomes.",
+    "developerName": "luxiaolei",
+    "category": "Productivity",
+    "capabilities": [
+      "Research",
+      "Analyze",
+      "Create",
+      "Operate"
+    ],
+    "websiteURL": "https://github.com/luxiaolei/AutoSpread",
+    "defaultPrompt": [
+      "Use AutoSpread to audit this product, identify the largest growth constraint, and propose the smallest evidence-driven next experiment."
+    ]
+  }
 }

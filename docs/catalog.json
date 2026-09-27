@@ -1,56 +1,543 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "updated": "2026-09-27",
-  "verification_note": "Catalog references and fit are curated pointers; verify current access, pricing, terms, and version before integration.",
+  "verification_note": "Links and capabilities were reviewed for AutoSpread v0.2. A catalog entry is a capability pointer, not proof that an account is connected or that write permissions are granted. Re-check volatile platform policies before execution.",
   "resources": [
-    {"name":"marketingskills","role":"content","type":"skill","url":"https://github.com/coreyhaines31/marketingskills","status":"recommended"},
-    {"name":"ego-browser","role":"all","type":"browser","url":"https://github.com/citrolabs/ego","status":"recommended"},
-    {"name":"GitHub MCP","role":"growth-engineering","type":"mcp","url":"https://github.com/github/github-mcp-server","status":"recommended"},
-    {"name":"PostHog","role":"analytics","type":"platform","url":"https://posthog.com/","status":"recommended"},
-    {"name":"Stripe","role":"analytics","type":"platform","url":"https://stripe.com/","status":"optional"},
-    {"name":"Search Console API","role":"seo-geo","type":"api","url":"https://developers.google.com/webmaster-tools","status":"recommended"},
-    {"name":"Postiz","role":"channel-operations","type":"platform","url":"https://postiz.com/","status":"optional"},
-    {"name":"Remotion","role":"content-video","type":"tool","url":"https://www.remotion.dev/","status":"optional"},
-    {"name":"HeyGen","role":"content-video","type":"platform","url":"https://www.heygen.com/","status":"optional"},
-    {"name":"Exa","role":"customer-research","type":"search","url":"https://exa.ai/","status":"optional"},
-    {"name":"Hermes","role":"all","type":"runtime","url":"https://github.com/NousResearch/hermes-agent","status":"reference"},
-    {"name":"Hermes Smith","role":"growth-lead","type":"skill","url":"https://github.com/zhuohoudeputao/hermes-smith","status":"reference"},
-    {"name":"OpenClaw","role":"all","type":"runtime","url":"https://github.com/openclaw/openclaw","status":"reference"},
-    {"name":"Paperclip","role":"growth-lead","type":"runtime","url":"https://github.com/paperclipai/paperclip","status":"reference"},
-    {"name":"ChatBridge","role":"growth-lead","type":"runtime","url":"https://github.com/luxiaolei/chatgpt-chat-bridge","status":"reference"},
-    {"name":"n8n","role":"channel-operations","type":"workflow","url":"https://n8n.io/","status":"optional"},
-    {"name":"Vercel","role":"growth-engineering","type":"platform","url":"https://vercel.com/","status":"optional"},
-    {"name":"Cloudflare","role":"growth-engineering","type":"platform","url":"https://developers.cloudflare.com/","status":"optional"},
-    {"name":"Google Analytics","role":"analytics","type":"platform","url":"https://analytics.google.com/","status":"optional"},
-    {"name":"Plausible","role":"analytics","type":"platform","url":"https://plausible.io/","status":"optional"},
-    {"name":"Umami","role":"analytics","type":"platform","url":"https://umami.is/","status":"optional"},
-    {"name":"Segment","role":"analytics","type":"platform","url":"https://segment.com/","status":"optional"},
-    {"name":"RudderStack","role":"analytics","type":"platform","url":"https://www.rudderstack.com/","status":"optional"},
-    {"name":"Supabase","role":"growth-engineering","type":"platform","url":"https://supabase.com/","status":"optional"},
-    {"name":"Sentry","role":"growth-engineering","type":"platform","url":"https://sentry.io/","status":"optional"},
-    {"name":"Langfuse","role":"analytics","type":"observability","url":"https://langfuse.com/","status":"optional"},
-    {"name":"Browserbase","role":"growth-engineering","type":"browser","url":"https://www.browserbase.com/","status":"optional"},
-    {"name":"Playwright","role":"growth-engineering","type":"tool","url":"https://playwright.dev/","status":"optional"},
-    {"name":"Chrome DevTools Protocol","role":"growth-engineering","type":"browser","url":"https://chromedevtools.github.io/devtools-protocol/","status":"reference"},
-    {"name":"GitHub Actions","role":"growth-engineering","type":"automation","url":"https://github.com/features/actions","status":"recommended"},
-    {"name":"Linear","role":"growth-lead","type":"platform","url":"https://linear.app/","status":"optional"},
-    {"name":"Notion","role":"growth-lead","type":"platform","url":"https://www.notion.so/","status":"optional"},
-    {"name":"Airtable","role":"analytics","type":"platform","url":"https://www.airtable.com/","status":"optional"},
-    {"name":"HubSpot","role":"lifecycle-operations","type":"platform","url":"https://www.hubspot.com/","status":"optional"},
-    {"name":"Mailchimp","role":"lifecycle-operations","type":"platform","url":"https://mailchimp.com/","status":"optional"},
-    {"name":"Resend","role":"lifecycle-operations","type":"email","url":"https://resend.com/","status":"optional"},
-    {"name":"Customer.io","role":"lifecycle-operations","type":"platform","url":"https://customer.io/","status":"optional"},
-    {"name":"Buffer","role":"channel-operations","type":"platform","url":"https://buffer.com/","status":"optional"},
-    {"name":"Hootsuite","role":"channel-operations","type":"platform","url":"https://www.hootsuite.com/","status":"optional"},
-    {"name":"Canva","role":"content-video","type":"design","url":"https://www.canva.com/","status":"optional"},
-    {"name":"Figma","role":"content-video","type":"design","url":"https://www.figma.com/","status":"optional"},
-    {"name":"Descript","role":"content-video","type":"video","url":"https://www.descript.com/","status":"optional"},
-    {"name":"Synthesia","role":"content-video","type":"video","url":"https://www.synthesia.io/","status":"optional"},
-    {"name":"OpenAI","role":"all","type":"model","url":"https://platform.openai.com/","status":"optional"},
-    {"name":"Anthropic","role":"all","type":"model","url":"https://www.anthropic.com/","status":"optional"},
-    {"name":"Google Trends","role":"customer-research","type":"research","url":"https://trends.google.com/","status":"recommended"},
-    {"name":"Ahrefs","role":"seo-geo","type":"platform","url":"https://ahrefs.com/","status":"optional"},
-    {"name":"Semrush","role":"seo-geo","type":"platform","url":"https://www.semrush.com/","status":"optional"},
-    {"name":"Hotjar","role":"conversion-optimization","type":"platform","url":"https://www.hotjar.com/","status":"optional"}
+    {
+      "name": "marketingskills",
+      "role": "all",
+      "type": "skill",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "status": "recommended",
+      "purpose": "Broad marketing skill library: product marketing, AI SEO, CRO, social, pricing, analytics, launch and more. Use selectively rather than loading all skills.",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "ego-browser",
+      "role": "all",
+      "type": "browser",
+      "url": "https://github.com/citrolabs/ego-lite",
+      "status": "recommended",
+      "purpose": "Default UI actuator for logged-in browser workflows that do not have a better structured interface.",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "GitHub MCP",
+      "role": "growth-engineering",
+      "type": "mcp",
+      "url": "https://github.com/github/github-mcp-server",
+      "status": "recommended",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "PostHog",
+      "role": "analytics",
+      "type": "platform",
+      "url": "https://posthog.com/",
+      "status": "recommended",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Stripe",
+      "role": "monetization-pricing",
+      "type": "platform",
+      "url": "https://docs.stripe.com/",
+      "status": "optional",
+      "purpose": "Payments, subscriptions, products/prices, coupons and revenue data. Scope permissions tightly.",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Search Console API",
+      "role": "seo-foundation",
+      "type": "api",
+      "url": "https://developers.google.com/webmaster-tools",
+      "status": "recommended",
+      "purpose": "First-party Google Search performance and site data for SEO diagnosis and observation.",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Postiz",
+      "role": "channel-operations",
+      "type": "platform",
+      "url": "https://postiz.com/",
+      "status": "optional",
+      "purpose": "Agent-friendly social scheduling/publishing layer; platform capabilities and permissions must be verified per connected account.",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Remotion",
+      "role": "content-video",
+      "type": "tool",
+      "url": "https://www.remotion.dev/",
+      "status": "optional",
+      "purpose": "Programmatic video rendering for repeatable product demos and content variants.",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "HeyGen",
+      "role": "content-video",
+      "type": "platform",
+      "url": "https://www.heygen.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Exa",
+      "role": "customer-research",
+      "type": "search",
+      "url": "https://exa.ai/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Hermes",
+      "role": "all",
+      "type": "runtime",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "status": "reference",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Hermes Smith",
+      "role": "growth-lead",
+      "type": "skill",
+      "url": "https://github.com/zhuohoudeputao/hermes-smith",
+      "status": "reference",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "OpenClaw",
+      "role": "all",
+      "type": "runtime",
+      "url": "https://github.com/openclaw/openclaw",
+      "status": "reference",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Paperclip",
+      "role": "growth-lead",
+      "type": "runtime",
+      "url": "https://github.com/paperclipai/paperclip",
+      "status": "reference",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "ChatBridge",
+      "role": "growth-lead",
+      "type": "runtime",
+      "url": "https://github.com/luxiaolei/chatgpt-chat-bridge",
+      "status": "reference",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "n8n",
+      "role": "channel-operations",
+      "type": "workflow",
+      "url": "https://n8n.io/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Vercel",
+      "role": "growth-engineering",
+      "type": "platform",
+      "url": "https://vercel.com/",
+      "status": "optional",
+      "purpose": "Deployments, logs and project operations; choose CLI/API/MCP capability according to current support and permissions.",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Cloudflare",
+      "role": "growth-engineering",
+      "type": "platform",
+      "url": "https://developers.cloudflare.com/",
+      "status": "optional",
+      "purpose": "DNS, Workers, Pages, analytics and edge configuration; prefer scoped API/MCP or Wrangler for repeatable actions.",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Google Analytics",
+      "role": "analytics",
+      "type": "platform",
+      "url": "https://analytics.google.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Plausible",
+      "role": "analytics",
+      "type": "platform",
+      "url": "https://plausible.io/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Umami",
+      "role": "analytics",
+      "type": "platform",
+      "url": "https://umami.is/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Segment",
+      "role": "analytics",
+      "type": "platform",
+      "url": "https://segment.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "RudderStack",
+      "role": "analytics",
+      "type": "platform",
+      "url": "https://www.rudderstack.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Supabase",
+      "role": "growth-engineering",
+      "type": "platform",
+      "url": "https://supabase.com/",
+      "status": "optional",
+      "purpose": "Database, auth, logs, functions and project operations; use project scope and read-only mode for analysis where possible.",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Sentry",
+      "role": "growth-engineering",
+      "type": "platform",
+      "url": "https://sentry.io/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Langfuse",
+      "role": "analytics",
+      "type": "observability",
+      "url": "https://langfuse.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Browserbase",
+      "role": "growth-engineering",
+      "type": "browser",
+      "url": "https://www.browserbase.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Playwright",
+      "role": "growth-engineering",
+      "type": "tool",
+      "url": "https://playwright.dev/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Chrome DevTools Protocol",
+      "role": "growth-engineering",
+      "type": "browser",
+      "url": "https://chromedevtools.github.io/devtools-protocol/",
+      "status": "reference",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "GitHub Actions",
+      "role": "growth-engineering",
+      "type": "automation",
+      "url": "https://github.com/features/actions",
+      "status": "recommended",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Linear",
+      "role": "growth-lead",
+      "type": "platform",
+      "url": "https://linear.app/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Notion",
+      "role": "growth-lead",
+      "type": "platform",
+      "url": "https://www.notion.so/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Airtable",
+      "role": "analytics",
+      "type": "platform",
+      "url": "https://www.airtable.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "HubSpot",
+      "role": "lifecycle-operations",
+      "type": "platform",
+      "url": "https://www.hubspot.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Mailchimp",
+      "role": "lifecycle-operations",
+      "type": "platform",
+      "url": "https://mailchimp.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Resend",
+      "role": "lifecycle-operations",
+      "type": "email",
+      "url": "https://resend.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Customer.io",
+      "role": "lifecycle-operations",
+      "type": "platform",
+      "url": "https://customer.io/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Buffer",
+      "role": "channel-operations",
+      "type": "platform",
+      "url": "https://buffer.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Hootsuite",
+      "role": "channel-operations",
+      "type": "platform",
+      "url": "https://www.hootsuite.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Canva",
+      "role": "content-video",
+      "type": "design",
+      "url": "https://www.canva.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Figma",
+      "role": "content-video",
+      "type": "design",
+      "url": "https://www.figma.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Descript",
+      "role": "content-video",
+      "type": "video",
+      "url": "https://www.descript.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Synthesia",
+      "role": "content-video",
+      "type": "video",
+      "url": "https://www.synthesia.io/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "OpenAI",
+      "role": "all",
+      "type": "model",
+      "url": "https://platform.openai.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Anthropic",
+      "role": "all",
+      "type": "model",
+      "url": "https://www.anthropic.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Google Trends",
+      "role": "customer-research",
+      "type": "research",
+      "url": "https://trends.google.com/",
+      "status": "recommended",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Ahrefs",
+      "role": "seo-foundation",
+      "type": "platform",
+      "url": "https://ahrefs.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Semrush",
+      "role": "seo-foundation",
+      "type": "platform",
+      "url": "https://www.semrush.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Hotjar",
+      "role": "conversion-optimization",
+      "type": "platform",
+      "url": "https://www.hotjar.com/",
+      "status": "optional",
+      "verification": "catalog-reviewed"
+    },
+    {
+      "name": "Corey AI SEO",
+      "role": "geo-optimization",
+      "type": "skill",
+      "url": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/ai-seo",
+      "status": "recommended",
+      "purpose": "Detailed AI-search/GEO/AEO workflow covering AI visibility, content readiness, citations and multi-platform answer engines.",
+      "verification": "source-reviewed"
+    },
+    {
+      "name": "Aaron Marketing Skills",
+      "role": "seo-geo",
+      "type": "skill-library",
+      "url": "https://github.com/aaron-he-zhu/aaron-marketing-skills",
+      "status": "recommended",
+      "purpose": "SEO/GEO lifecycle split into survey, implement, tune and evaluate phases plus quality gates; also includes social, email, ads and launch methods.",
+      "verification": "source-reviewed"
+    },
+    {
+      "name": "UnifAPI AI Visibility",
+      "role": "ai-visibility",
+      "type": "skill-library",
+      "url": "https://github.com/unifapi-agent/agents",
+      "status": "recommended",
+      "purpose": "AI visibility audit, fixed-panel LLM mention tracking and answer-gap workflows with read-only public-data integrations.",
+      "verification": "source-reviewed"
+    },
+    {
+      "name": "Google AI features guidance",
+      "role": "geo-optimization",
+      "type": "official-docs",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "status": "recommended",
+      "purpose": "Ground truth for Google AI Overviews/AI Mode: foundational SEO applies; no special AI markup or file is required.",
+      "verification": "official-source-reviewed"
+    },
+    {
+      "name": "ScrapeCreators Social Research Skills",
+      "role": "customer-research",
+      "type": "skill-library",
+      "url": "https://github.com/ScrapeCreators/social-media-research-skills",
+      "status": "optional",
+      "purpose": "Public social research: outlier posts, comment mining, competitor teardown, transcript analysis, ad libraries, trends and demand research.",
+      "verification": "source-reviewed"
+    },
+    {
+      "name": "Social Media Skills",
+      "role": "content-video",
+      "type": "skill-library",
+      "url": "https://github.com/social-media-skills/skills",
+      "status": "optional",
+      "purpose": "Large platform-specific social skill library spanning strategy, writing, video, design, community, publishing and analytics. Load only the relevant skill.",
+      "verification": "source-reviewed"
+    },
+    {
+      "name": "Cloudflare API MCP",
+      "role": "growth-engineering",
+      "type": "mcp",
+      "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+      "status": "recommended",
+      "purpose": "Official Cloudflare MCP with OAuth/token-scoped access across Cloudflare APIs; useful for DNS, Workers, logs and configuration.",
+      "verification": "official-source-reviewed"
+    },
+    {
+      "name": "Vercel Plugin",
+      "role": "growth-engineering",
+      "type": "plugin",
+      "url": "https://vercel.com/plugin",
+      "status": "recommended",
+      "purpose": "Official Vercel agent skills/plugin that teaches Vercel-specific workflows across Codex and other hosts.",
+      "verification": "official-source-reviewed"
+    },
+    {
+      "name": "Vercel MCP",
+      "role": "growth-engineering",
+      "type": "mcp",
+      "url": "https://mcp.vercel.com",
+      "status": "optional",
+      "purpose": "Official Vercel MCP for project/deployment context and operations according to current supported-client and permission surface.",
+      "verification": "official-source-reviewed"
+    },
+    {
+      "name": "Supabase MCP",
+      "role": "growth-engineering",
+      "type": "mcp",
+      "url": "https://supabase.com/docs/guides/ai-tools/mcp",
+      "status": "recommended",
+      "purpose": "Official project-scoped MCP for database, debugging, development, functions and branching; supports read-only configuration.",
+      "verification": "official-source-reviewed"
+    },
+    {
+      "name": "Stripe MCP",
+      "role": "monetization-pricing",
+      "type": "mcp",
+      "url": "https://docs.stripe.com/mcp",
+      "status": "recommended",
+      "purpose": "Official Stripe MCP for API reads/writes and documentation. Prefer OAuth or restricted keys and human confirmation for consequential writes.",
+      "verification": "official-source-reviewed"
+    },
+    {
+      "name": "Stripe Agent Skills",
+      "role": "monetization-pricing",
+      "type": "skill",
+      "url": "https://docs.stripe.com/skills",
+      "status": "recommended",
+      "purpose": "Official Stripe agent guidance including documentation and best-practice skills for billing integrations.",
+      "verification": "official-source-reviewed"
+    },
+    {
+      "name": "Postiz Agent CLI",
+      "role": "channel-operations",
+      "type": "cli-skill",
+      "url": "https://github.com/gitroomhq/postiz-agent",
+      "status": "optional",
+      "purpose": "Agent-oriented CLI for discovering connected social capabilities, scheduling/publishing and retrieving available analytics.",
+      "verification": "source-reviewed"
+    },
+    {
+      "name": "Remotion Skills",
+      "role": "content-video",
+      "type": "skill",
+      "url": "https://github.com/remotion-dev/skills",
+      "status": "optional",
+      "purpose": "Agent skills for programmatic video production with Remotion.",
+      "verification": "source-reviewed"
+    },
+    {
+      "name": "Google Search AI performance model",
+      "role": "analytics",
+      "type": "official-docs",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features#monitor",
+      "status": "reference",
+      "purpose": "Google AI-feature traffic is reported within Search Console Web search; use downstream analytics for conversion quality.",
+      "verification": "official-source-reviewed"
+    }
   ]
 }

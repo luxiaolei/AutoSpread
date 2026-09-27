@@ -1,10 +1,16 @@
 ---
 name: seo-geo-zh
-description: 基于证据改善搜索引擎和答案引擎的可发现性。
+description: 搜索发现总路由：技术 SEO 基础、GEO/AI 答案可用性和 AI 可见度测量。
 ---
 
-# SEO 与 GEO
+# SEO / GEO 总路由
 
-检查可索引性、信息架构、页面意图、内链、结构化数据和适合答案引用的内容。
-有 Search Console 等数据时优先使用；没有数据就标记为假设。每项改动都要对应
-查询、用户需要或抓取问题。交付排序后的改动、示例和验证计划，不承诺排名或流量。
+当任务同时涉及传统搜索和 AI 发现时使用。
+
+按问题路由：
+
+- 抓取、索引、站点结构、内链、结构化数据、Search Console、性能 -> `seo-foundation`
+- 让新旧页面更清晰、可提取、有证据、适合答案引擎引用 -> `geo-optimization`
+- 用固定问题/Prompt 面板测量品牌是否被 AI 提及或引用 -> `ai-visibility`
+
+不要发明所谓 Google 专用 GEO 秘诀。Google AI 搜索功能仍以基础 SEO 和 people-first 内容为前提，并不要求特殊 AI 标记或文件。额外的 Agent-readable 资产只能视为特定平台的可选增强，不能承诺排名或引用。

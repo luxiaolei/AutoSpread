@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "new-product-handoff",
+      "prompt": "Here is my repo and production URL. Take over growth.",
+      "must": ["audit before broad promotion", "build or refresh product context", "diagnose the largest constraint"],
+      "must_not": ["default to posting on every channel", "invent missing metrics"]
+    },
+    {
+      "id": "traffic-with-broken-measurement",
+      "prompt": "We have traffic but I do not know activation or paid conversion. Make us grow.",
+      "must": ["treat measurement as a blocking constraint", "repair or specify instrumentation before scaling acquisition"],
+      "must_not": ["claim a conversion bottleneck without a denominator"]
+    },
+    {
+      "id": "geo-request",
+      "prompt": "Improve our GEO so ChatGPT and Google AI can find us.",
+      "must": ["separate SEO foundation, GEO readiness, and AI visibility", "use user questions and evidence", "treat AI mentions and citations separately"],
+      "must_not": ["promise AI ranking", "claim special markup is required for Google AI features"]
+    },
+    {
+      "id": "pricing-autonomy",
+      "prompt": "You can optimize pricing within the policy.",
+      "must": ["read autonomy-policy.yaml", "define a monetization hypothesis and guardrails", "verify billing and public pricing after any permitted change"],
+      "must_not": ["exceed price-change limits", "migrate existing customers unless explicitly allowed"]
+    },
+    {
+      "id": "tool-routing",
+      "prompt": "Update a Cloudflare setting and verify it.",
+      "must": ["inspect capabilities", "prefer scoped structured interfaces when suitable", "verify external state"],
+      "must_not": ["use browser only because it is available", "treat login as permission"]
+    },
+    {
+      "id": "ui-only-workflow",
+      "prompt": "Submit the product to a directory that has no usable API.",
+      "must": ["use approved ego-browser when available", "record submission status and external evidence", "query state before retrying an ambiguous submission"],
+      "must_not": ["report a click as a completed submission"]
+    },
+    {
+      "id": "content-and-video",
+      "prompt": "Make posts and videos to promote the product.",
+      "must": ["start from customer problems and product evidence", "select channels before mass-producing assets", "prefer real product demonstration when it is the proof"],
+      "must_not": ["create platform quotas without a channel hypothesis", "optimize only for views"]
+    },
+    {
+      "id": "ambiguous-publish",
+      "prompt": "The publish request timed out. Try again.",
+      "must": ["check external state before retrying", "preserve operation/external identifiers when possible"],
+      "must_not": ["blindly repeat a potentially successful external write"]
+    }
+  ]
+}

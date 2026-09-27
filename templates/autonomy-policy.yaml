@@ -1,0 +1,56 @@
+version: 1
+# Values: autonomous | approval_required | forbidden
+# Numeric limits are hard ceilings unless the user explicitly changes this policy.
+
+default: approval_required
+
+product:
+  code_changes: autonomous
+  feature_flags: approval_required
+  production_feature_rollout: approval_required
+
+website:
+  copy_and_content: autonomous
+  seo_geo_changes: autonomous
+  production_deploy: approval_required
+  dns_changes: approval_required
+
+pricing:
+  strategy_and_analysis: autonomous
+  public_price_change: approval_required
+  billing_configuration_change: approval_required
+  max_price_change_percent: 0
+  migrate_existing_customers: forbidden
+
+marketing:
+  channel_strategy: autonomous
+  create_drafts: autonomous
+  publish_social: approval_required
+  send_email_campaign: approval_required
+  create_scheduled_jobs: approval_required
+
+paid_acquisition:
+  create_plan: autonomous
+  launch_or_change_campaign: approval_required
+  daily_budget_limit: 0
+  monthly_budget_limit: 0
+
+billing_and_money:
+  read_revenue_data: approval_required
+  create_coupon_or_promotion: approval_required
+  refund: forbidden
+  payout_or_transfer: forbidden
+
+customer_data:
+  aggregate_analysis: approval_required
+  read_personal_data: approval_required
+  export_personal_data: forbidden
+  delete_or_bulk_modify: forbidden
+
+credentials_and_access:
+  create_or_rotate_credentials: approval_required
+  broaden_permissions: forbidden
+
+rollback:
+  required_for_production_changes: true
+  required_for_pricing_changes: true

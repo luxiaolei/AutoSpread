@@ -1,12 +1,16 @@
 ---
 name: seo-geo
-description: Improve discoverability for search and answer engines from evidence.
+description: Router for search discoverability: technical SEO foundation, GEO/AI-answer readiness, and AI visibility measurement.
 ---
 
-# SEO and GEO
+# SEO / GEO Router
 
-Audit indexability, information architecture, page intent, internal links,
-structured data, and answer-ready copy. Use Search Console or equivalent data
-when available; otherwise label recommendations as hypotheses. Tie every change
-to a query, audience need, or crawl issue. Deliver prioritized changes, examples,
-and a verification plan. Never promise ranking or traffic.
+Use this as an umbrella when the request mixes traditional search and AI discovery.
+
+Route by problem:
+
+- crawling, indexing, site architecture, internal linking, structured data, Search Console, performance -> `seo-foundation`
+- making existing or new pages clear, extractable, well-evidenced, and useful to answer engines -> `geo-optimization`
+- measuring whether the brand is mentioned or cited across a fixed query/prompt panel -> `ai-visibility`
+
+Do not invent a special Google-only GEO trick. For Google AI features, strong foundational SEO and people-first content remain the baseline; no special AI markup or file is required. Treat any extra agent-readable artifact as optional and platform-specific, not a ranking guarantee.
