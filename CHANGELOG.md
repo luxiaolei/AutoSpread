@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.0 — 2026-09-28
+
+- Added a conditional SEO specialist layer inspired by the MIT `AgriciDaniel/claude-seo` project.
+- Added `seo-site-integrity` for schema, sitemap, image SEO and post-deploy drift baselines.
+- Added `search-experience` for SERP intent/page-type mismatch and search-to-conversion analysis.
+- Added `local-seo`, `international-seo`, `ecommerce-seo`, and `agent-readiness`.
+- Extended SEO routing so specialists run only when business/site evidence requires them.
+- Added Claude SEO, DataForSEO and Firecrawl extension pointers to the resource catalog.
+- Added bilingual attribution notes and new behavior-eval scenarios for conditional SEO routing.
+
 ## 0.2.0 — 2026-09-27
 
 - Reframed AutoSpread as a product-led Growth Operator rather than a marketing task pack.

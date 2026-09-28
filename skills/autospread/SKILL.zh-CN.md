@@ -37,6 +37,12 @@ description: 增长 Lead 方法：先诊断最大增长约束，再选择最小�
 - 最大瓶颈不清楚 -> `growth-strategy`
 - 权限或自主度问题 -> `autonomy-policy`
 - 搜索技术基础 -> `seo-foundation`
+- Schema/Sitemap/图片/发布后 SEO 回退 -> `seo-site-integrity`
+- 搜索意图/页面类型错位 -> `search-experience`
+- 本地实体/服务区发现 -> `local-seo`
+- 多语言/多地区发现 -> `international-seo`
+- 商店/Catalog 商业搜索 -> `ecommerce-seo`
+- 用户触发 AI Agent 可操作性 -> `agent-readiness`
 - AI 答案可引用性 -> `geo-optimization`
 - AI 提及/引用跟踪 -> `ai-visibility`
 - 落地页/注册/激活摩擦 -> `conversion-optimization`

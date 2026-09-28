@@ -37,6 +37,12 @@ Use this skill when a product needs growth work and the user wants one clear own
 - unclear biggest constraint -> `growth-strategy`
 - permission or autonomy question -> `autonomy-policy`
 - technical search foundation -> `seo-foundation`
+- schema/sitemap/images/post-deploy SEO regression -> `seo-site-integrity`
+- search-intent/page-type mismatch -> `search-experience`
+- local physical/service-area discovery -> `local-seo`
+- multilingual/multi-region discovery -> `international-seo`
+- store/catalog commerce search -> `ecommerce-seo`
+- user-triggered AI-agent operability -> `agent-readiness`
 - AI answer readiness -> `geo-optimization`
 - AI mentions/citations tracking -> `ai-visibility`
 - landing/signup/onboarding friction -> `conversion-optimization`

@@ -23,6 +23,7 @@ REQUIRED_CATALOG_RESOURCES = {
     "Aaron Marketing Skills",
     "UnifAPI AI Visibility",
     "Google AI features guidance",
+    "Claude SEO",
     "ego-browser",
     "Cloudflare API MCP",
     "Vercel Plugin",
@@ -78,6 +79,8 @@ def validate() -> int:
         "docs/zh-CN/quickstart.md",
         "docs/en/operating-model.md",
         "docs/zh-CN/operating-model.md",
+        "docs/en/attributions.md",
+        "docs/zh-CN/attributions.md",
         "docs/catalog.json",
         *[f"templates/{name}" for name in CONTEXT_TEMPLATES],
     ]

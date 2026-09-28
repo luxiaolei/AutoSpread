@@ -20,6 +20,10 @@ AutoSpread 把搜索发现拆成三个不同任务：
 
 针对 Google AI Overviews / AI Mode，以 Google 官方说明为边界：基础 SEO 仍适用，没有必须额外添加的 AI 专用标记或文件。Agent-readable 文件只能是可选实验，不能承诺结果。
 
+### 条件式 SEO 专家层
+
+基础 SEO 完成后，只在证据需要时深入：`seo-site-integrity` 处理 Schema/Sitemap/Image/Drift，`search-experience` 处理搜索意图/页面类型错位，`local-seo` 处理实体或服务区业务，`international-seo` 处理多语言/多地区，`ecommerce-seo` 处理商店/Catalog，`agent-readiness` 处理代表用户行动的 AI Agent 是否能稳定操作网站。这个条件式路由部分借鉴了 MIT 的 Claude SEO 项目，但 AutoSpread 保持宿主无关并继续以业务结果为中心。
+
 ## 内容和分发
 
 真实用户问题和产品证据决定内容主题。一个高价值洞察可以派生网站页、Docs/教程、对比内容、Founder Post、X/LinkedIn 版本、社区参与、长 Demo、短视频、Newsletter 等。Lead 根据用户和渠道经济性选择少量渠道，而不是默认全平台铺开。

@@ -4,7 +4,7 @@ AutoSpread is a lightweight, bilingual growth operating system for AI agents. Gi
 
 It is intentionally not another multi-agent runtime. Roles are methods, not mandatory bots. One Codex/ChatGPT/Hermes/Claude-style session can perform several roles, or delegate independent work when the host supports it.
 
-## v0.2 operating model
+## v0.3 operating model
 
 ```text
 product + goal + autonomy policy
@@ -31,11 +31,12 @@ product / funnel / monetization / SEO-GEO / content / channels / lifecycle / pai
 - an explicit autonomy-policy method and editable policy template;
 - project audit, customer research, CRO, monetization, lifecycle, paid acquisition and analytics playbooks;
 - SEO split into foundation, GEO/answer-engine optimization, and AI-visibility measurement;
+- a conditional SEO specialist layer for site integrity/drift, search experience, local, international, ecommerce, and agent readiness;
 - content strategy, content/video production, channel selection and channel operations;
 - a growth-experiment contract that ties work to evidence and business outcomes;
-- 19 bilingual Agent Skills;
+- 25 bilingual Agent Skills;
 - five product workspace templates: product context, autonomy policy, capability inventory, experiment ledger, and work log;
-- a machine-readable catalog of 64 reviewed capability pointers (skills, plugins, MCPs, CLIs, platforms and runtimes);
+- a machine-readable catalog of 67 reviewed capability pointers (skills, plugins, MCPs, CLIs, platforms and runtimes);
 - a standard-library-only helper for validation, catalog filtering, context initialization and project-skill installation.
 
 ## Use it
@@ -69,4 +70,4 @@ python3 scripts/autospread.py validate
 python3 -m pytest -q
 ```
 
-See `README.zh-CN.md`, `docs/en/operating-model.md`, and `docs/zh-CN/operating-model.md` for the full model.
+See `README.zh-CN.md`, `docs/en/operating-model.md`, `docs/zh-CN/operating-model.md`, and the attribution notes for the full model.

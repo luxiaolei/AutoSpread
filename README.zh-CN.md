@@ -4,7 +4,7 @@ AutoSpread 是一个轻量、双语的 AI 增长经营系统。你把产品仓�
 
 它刻意不做另一个多 Agent Runtime。角色是方法，不是必须常驻的 Bot。一个 Codex / ChatGPT / Hermes / Claude 类会话可以承担多个角色；宿主支持时，也可以把相互独立的工作分给子 Agent。
 
-## v0.2 工作模型
+## v0.3 工作模型
 
 ```text
 产品 + 经营目标 + 自主权策略
@@ -25,17 +25,18 @@ API/MCP -> CLI -> SDK/代码 -> ego-browser -> 人工
           `----> 下一轮
 ```
 
-## v0.2 包含
+## v0.3 包含
 
 - Growth Lead 总路由和增长约束诊断；
 - 明确的自主权策略 Skill 和可编辑 Policy 模板；
 - 项目体检、客户研究、CRO、定价变现、生命周期、付费获客和数据复盘；
 - 把搜索拆成 SEO 基础、GEO/答案引擎优化、AI 可见度测量三层；
+- 增加条件式 SEO 专家层：站点完整性/Drift、Search Experience、Local、International、E-commerce 和 Agent Readiness；
 - 内容策略、内容/视频生产、渠道选择和渠道运营；
 - 把每次重要动作连接到业务证据的增长实验契约；
-- 19 套中英文 Agent Skills；
+- 25 套中英文 Agent Skills；
 - 5 个产品工作区模板：产品事实、自主权策略、能力清单、实验台账、工作日志；
-- 64 项机器可读能力目录，包括 Skill、Plugin、MCP、CLI、平台和可选 Runtime；
+- 67 项机器可读能力目录，包括 Skill、Plugin、MCP、CLI、平台和可选 Runtime；
 - 只依赖 Python 标准库的校验、目录筛选、上下文初始化和项目级 Skill 安装工具。
 
 ## 使用方式
@@ -69,4 +70,4 @@ python3 scripts/autospread.py validate
 python3 -m pytest -q
 ```
 
-完整逻辑见 `docs/zh-CN/operating-model.md`；英文版见 `docs/en/operating-model.md`。
+完整逻辑见 `docs/zh-CN/operating-model.md`；英文版见 `docs/en/operating-model.md`，方法来源见 Attribution 文档。

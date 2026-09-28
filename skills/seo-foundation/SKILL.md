@@ -12,6 +12,19 @@ description: Audit and improve crawlability, indexability, information architect
 3. Read Search Console or equivalent first-party data when available. Distinguish demand, impressions, rank, CTR, landing behavior, and conversion.
 4. Check page experience and performance only where it can affect usability or discovery; do not optimize synthetic scores without a user or crawl reason.
 
+## Conditional specialist routing
+
+After the base audit, route only when evidence requires it:
+
+- schema/sitemap/image issues or release regression -> `seo-site-integrity`;
+- technically sound page but wrong search intent/page type -> `search-experience`;
+- physical/service-area/multi-location business -> `local-seo`;
+- multilingual or multi-region URL sets -> `international-seo`;
+- store/catalog/product commerce -> `ecommerce-seo`;
+- site must be operated by user-triggered AI agents -> `agent-readiness`.
+
+Do not run every specialist on every site.
+
 ## Implement and tune
 
 - map one primary intent per important page while allowing useful subtopics;

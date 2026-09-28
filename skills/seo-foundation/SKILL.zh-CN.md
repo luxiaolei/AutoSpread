@@ -12,6 +12,19 @@ description: 检查并改善抓取、索引、信息架构、页面意图、结�
 3. 有条件时优先读取 Search Console 等第一方数据，区分需求、曝光、排名、CTR、落地页行为和转化。
 4. 只有影响用户体验或发现能力时才优化性能，不为了单一跑分而优化。
 
+## 条件式专家路由
+
+完成基础检查后，只在证据需要时调用：
+
+- Schema/Sitemap/图片问题或发布后 SEO 回退 -> `seo-site-integrity`；
+- 技术健康但搜索意图/页面类型错位 -> `search-experience`；
+- 实体/服务区/多门店业务 -> `local-seo`；
+- 多语言或多地区 URL 集 -> `international-seo`；
+- 商店/Catalog/Product Commerce -> `ecommerce-seo`；
+- 网站需要被代表用户行动的 AI Agent 稳定操作 -> `agent-readiness`。
+
+不要每个站点都机械运行全部专家。
+
 ## 实施与调优
 
 - 重要页面有清晰主意图，同时覆盖有价值的相关子问题；

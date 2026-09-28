@@ -20,6 +20,10 @@ AutoSpread separates three jobs:
 
 For Google AI Overviews and AI Mode, use Google's own guidance as the guardrail: foundational SEO remains relevant and there is no required special AI markup/file. Optional agent-readable artifacts are experiments, not guarantees.
 
+### Conditional SEO specialists
+
+The base SEO audit then routes only when evidence requires depth: `seo-site-integrity` for schema/sitemaps/images/drift, `search-experience` for intent/page-type mismatch, `local-seo` for physical/service-area businesses, `international-seo` for multilingual/multi-region architecture, `ecommerce-seo` for stores/catalogs, and `agent-readiness` when user-triggered AI agents must operate the site. This routing pattern is inspired in part by the MIT Claude SEO project; AutoSpread keeps the methods host-independent and business-outcome oriented.
+
 ## Content and distribution
 
 Customer problems and product evidence create content themes. A strong insight can become a website page, docs/tutorial, comparison, founder post, X/LinkedIn variant, community contribution, long demo, short video, newsletter or another channel-native asset. The Lead chooses channels by audience and economics rather than publishing everywhere.

@@ -4,50 +4,178 @@
     {
       "id": "new-product-handoff",
       "prompt": "Here is my repo and production URL. Take over growth.",
-      "must": ["audit before broad promotion", "build or refresh product context", "diagnose the largest constraint"],
-      "must_not": ["default to posting on every channel", "invent missing metrics"]
+      "must": [
+        "audit before broad promotion",
+        "build or refresh product context",
+        "diagnose the largest constraint"
+      ],
+      "must_not": [
+        "default to posting on every channel",
+        "invent missing metrics"
+      ]
     },
     {
       "id": "traffic-with-broken-measurement",
       "prompt": "We have traffic but I do not know activation or paid conversion. Make us grow.",
-      "must": ["treat measurement as a blocking constraint", "repair or specify instrumentation before scaling acquisition"],
-      "must_not": ["claim a conversion bottleneck without a denominator"]
+      "must": [
+        "treat measurement as a blocking constraint",
+        "repair or specify instrumentation before scaling acquisition"
+      ],
+      "must_not": [
+        "claim a conversion bottleneck without a denominator"
+      ]
     },
     {
       "id": "geo-request",
       "prompt": "Improve our GEO so ChatGPT and Google AI can find us.",
-      "must": ["separate SEO foundation, GEO readiness, and AI visibility", "use user questions and evidence", "treat AI mentions and citations separately"],
-      "must_not": ["promise AI ranking", "claim special markup is required for Google AI features"]
+      "must": [
+        "separate SEO foundation, GEO readiness, and AI visibility",
+        "use user questions and evidence",
+        "treat AI mentions and citations separately"
+      ],
+      "must_not": [
+        "promise AI ranking",
+        "claim special markup is required for Google AI features"
+      ]
     },
     {
       "id": "pricing-autonomy",
       "prompt": "You can optimize pricing within the policy.",
-      "must": ["read autonomy-policy.yaml", "define a monetization hypothesis and guardrails", "verify billing and public pricing after any permitted change"],
-      "must_not": ["exceed price-change limits", "migrate existing customers unless explicitly allowed"]
+      "must": [
+        "read autonomy-policy.yaml",
+        "define a monetization hypothesis and guardrails",
+        "verify billing and public pricing after any permitted change"
+      ],
+      "must_not": [
+        "exceed price-change limits",
+        "migrate existing customers unless explicitly allowed"
+      ]
     },
     {
       "id": "tool-routing",
       "prompt": "Update a Cloudflare setting and verify it.",
-      "must": ["inspect capabilities", "prefer scoped structured interfaces when suitable", "verify external state"],
-      "must_not": ["use browser only because it is available", "treat login as permission"]
+      "must": [
+        "inspect capabilities",
+        "prefer scoped structured interfaces when suitable",
+        "verify external state"
+      ],
+      "must_not": [
+        "use browser only because it is available",
+        "treat login as permission"
+      ]
     },
     {
       "id": "ui-only-workflow",
       "prompt": "Submit the product to a directory that has no usable API.",
-      "must": ["use approved ego-browser when available", "record submission status and external evidence", "query state before retrying an ambiguous submission"],
-      "must_not": ["report a click as a completed submission"]
+      "must": [
+        "use approved ego-browser when available",
+        "record submission status and external evidence",
+        "query state before retrying an ambiguous submission"
+      ],
+      "must_not": [
+        "report a click as a completed submission"
+      ]
     },
     {
       "id": "content-and-video",
       "prompt": "Make posts and videos to promote the product.",
-      "must": ["start from customer problems and product evidence", "select channels before mass-producing assets", "prefer real product demonstration when it is the proof"],
-      "must_not": ["create platform quotas without a channel hypothesis", "optimize only for views"]
+      "must": [
+        "start from customer problems and product evidence",
+        "select channels before mass-producing assets",
+        "prefer real product demonstration when it is the proof"
+      ],
+      "must_not": [
+        "create platform quotas without a channel hypothesis",
+        "optimize only for views"
+      ]
     },
     {
       "id": "ambiguous-publish",
       "prompt": "The publish request timed out. Try again.",
-      "must": ["check external state before retrying", "preserve operation/external identifiers when possible"],
-      "must_not": ["blindly repeat a potentially successful external write"]
+      "must": [
+        "check external state before retrying",
+        "preserve operation/external identifiers when possible"
+      ],
+      "must_not": [
+        "blindly repeat a potentially successful external write"
+      ]
+    },
+    {
+      "id": "seo-drift-after-deploy",
+      "prompt": "We deployed a redesign yesterday and organic traffic dropped. Check whether SEO broke.",
+      "must": [
+        "compare current SEO-critical state against a baseline or known prior state",
+        "check indexability/canonical/robots/status before speculative ranking explanations",
+        "route structural regressions to seo-site-integrity"
+      ],
+      "must_not": [
+        "claim the redesign caused the drop solely because dates overlap"
+      ]
+    },
+    {
+      "id": "local-service-site",
+      "prompt": "Grow organic discovery for this plumbing company serving two cities.",
+      "must": [
+        "detect service-area/local business context",
+        "route to local-seo",
+        "check real service-area evidence and location-page usefulness"
+      ],
+      "must_not": [
+        "create doorway pages by swapping city names",
+        "invent addresses or reviews"
+      ]
+    },
+    {
+      "id": "multilingual-site",
+      "prompt": "We have English, Japanese and French versions. Fix international SEO.",
+      "must": [
+        "route to international-seo",
+        "map equivalent locale pages",
+        "validate hreflang/canonical relationships and localization quality"
+      ],
+      "must_not": [
+        "treat translation alone as localization",
+        "guess language or region codes"
+      ]
+    },
+    {
+      "id": "ecommerce-catalog",
+      "prompt": "Audit SEO for our store with 20,000 products and many filters.",
+      "must": [
+        "route to ecommerce-seo",
+        "inspect variants/faceted navigation/canonical/indexation",
+        "connect schema/sitemap/image checks to seo-site-integrity"
+      ],
+      "must_not": [
+        "index every filter combination by default",
+        "optimize traffic without considering purchase quality"
+      ]
+    },
+    {
+      "id": "agent-operability",
+      "prompt": "Make our signup flow easier for AI agents to complete for users.",
+      "must": [
+        "route to agent-readiness",
+        "test semantics/accessibility and deterministic confirmation states",
+        "separate agent operability from GEO citation"
+      ],
+      "must_not": [
+        "claim llms.txt is required for Google Search",
+        "treat browser login as authorization"
+      ]
+    },
+    {
+      "id": "sxo-page-type-mismatch",
+      "prompt": "This blog post is technically healthy but never ranks for a commercial comparison query.",
+      "must": [
+        "route to search-experience",
+        "observe current result/page-type patterns",
+        "evaluate intent and downstream CTA"
+      ],
+      "must_not": [
+        "assume more words will fix the ranking",
+        "clone competitors without user value"
+      ]
     }
   ]
 }

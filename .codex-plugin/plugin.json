@@ -1,6 +1,6 @@
 {
   "name": "autospread",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A lightweight bilingual growth operating system for agents: diagnose constraints, choose playbooks, act within autonomy policy, and verify outcomes.",
   "skills": "./skills/",
   "interface": {

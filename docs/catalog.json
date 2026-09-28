@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated": "2026-09-27",
-  "verification_note": "Links and capabilities were reviewed for AutoSpread v0.2. A catalog entry is a capability pointer, not proof that an account is connected or that write permissions are granted. Re-check volatile platform policies before execution.",
+  "updated": "2026-09-28",
+  "verification_note": "Links and capabilities were reviewed for AutoSpread v0.3. A catalog entry is a capability pointer, not proof that an account is connected or that write permissions are granted. Re-check volatile platform policies before execution.",
   "resources": [
     {
       "name": "marketingskills",
@@ -538,6 +538,33 @@
       "status": "reference",
       "purpose": "Google AI-feature traffic is reported within Search Console Web search; use downstream analytics for conversion quality.",
       "verification": "official-source-reviewed"
+    },
+    {
+      "name": "Claude SEO",
+      "role": "seo-foundation",
+      "type": "skill-library",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "status": "recommended",
+      "purpose": "Comprehensive MIT SEO plugin with conditional specialist routing across technical SEO, content/E-E-A-T, schema, sitemap, images, GEO, local, international, SXO, drift, ecommerce and agent readiness. AutoSpread absorbs selected method structure rather than vendoring the package.",
+      "verification": "source-reviewed"
+    },
+    {
+      "name": "Claude SEO DataForSEO extension",
+      "role": "seo-foundation",
+      "type": "extension",
+      "url": "https://github.com/AgriciDaniel/claude-seo/tree/main/extensions/dataforseo",
+      "status": "optional",
+      "purpose": "Optional live SERP, keyword, backlink, on-page, merchant and AI-visibility enrichment. Treat API cost as a budgeted external action.",
+      "verification": "source-reviewed"
+    },
+    {
+      "name": "Claude SEO Firecrawl extension",
+      "role": "seo-foundation",
+      "type": "extension",
+      "url": "https://github.com/AgriciDaniel/claude-seo/tree/main/extensions/firecrawl",
+      "status": "optional",
+      "purpose": "Optional crawl/extraction enrichment for SEO research when the connected environment already uses Firecrawl.",
+      "verification": "source-reviewed"
     }
   ]
 }

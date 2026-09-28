@@ -9,6 +9,7 @@ Roles are reusable responsibilities, not required long-running agents. One capab
 | Customer Researcher | Audience, pains, alternatives, or language are uncertain | customer-research | sourced segments, problems, objections, hypotheses |
 | Growth Engineer | Website, product, onboarding, measurement, infra, or deploy needs work | conversion-optimization, seo-foundation | reproducible finding, change, test, rollback/verification |
 | SEO/GEO Operator | Organic or AI discovery is a constraint | seo-foundation, geo-optimization, ai-visibility | prioritized discovery changes and measured visibility |
+| SEO Specialist | Search issue needs schema/sitemap/image/drift, SXO, local, international, ecommerce, or agent-operability depth | seo-site-integrity, search-experience, local-seo, international-seo, ecommerce-seo, agent-readiness | scoped specialist audit, change, and verification |
 | Monetization Operator | Pricing, packaging, offer, trial, or paywall is a constraint | monetization-pricing | bounded monetization experiment and billing/public-page consistency |
 | Content Strategist | The team needs a coherent narrative/asset plan | content-strategy | themes, evidence, asset map, destination and CTA |
 | Creative Producer | A validated idea needs copy, demo, visual, or video | content-video | checked channel-ready asset |

@@ -24,6 +24,12 @@ EXPECTED_SKILLS = {
     "customer-research",
     "seo-geo",
     "seo-foundation",
+    "agent-readiness",
+    "ecommerce-seo",
+    "international-seo",
+    "local-seo",
+    "search-experience",
+    "seo-site-integrity",
     "geo-optimization",
     "ai-visibility",
     "conversion-optimization",
@@ -50,7 +56,7 @@ def run_cli(*args: str) -> subprocess.CompletedProcess[str]:
 def test_plugin_contract() -> None:
     manifest = json.loads((ROOT / "plugin.json").read_text())
     assert manifest["name"] == "autospread"
-    assert manifest["version"] == "0.2.0"
+    assert manifest["version"] == "0.3.0"
     assert manifest["$schema"].endswith("plugin.schema.json")
     compat = json.loads((ROOT / ".codex-plugin/plugin.json").read_text())
     assert compat["skills"] == "./skills/"
@@ -64,14 +70,16 @@ def test_plugin_contract() -> None:
     assert (ROOT / "README.zh-CN.md").is_file()
     assert (ROOT / "docs/en/operating-model.md").is_file()
     assert (ROOT / "docs/zh-CN/operating-model.md").is_file()
+    assert (ROOT / "docs/en/attributions.md").is_file()
+    assert (ROOT / "docs/zh-CN/attributions.md").is_file()
     assert (ROOT / "evals/scenarios.json").is_file()
 
 
 def test_validate_command() -> None:
     result = run_cli("validate")
     assert result.returncode == 0, result.stderr + result.stdout
-    assert "19 skills" in result.stdout
-    assert "64 resources" in result.stdout
+    assert "25 skills" in result.stdout
+    assert "67 resources" in result.stdout
 
 
 def test_cli_initializes_product_records() -> None:
@@ -92,7 +100,7 @@ def test_cli_refuses_context_overwrite() -> None:
 def test_catalog_has_specialized_geo_and_platform_resources() -> None:
     catalog = json.loads((ROOT / "docs/catalog.json").read_text())
     assert catalog["schema_version"] == 2
-    assert len(catalog["resources"]) == 64
+    assert len(catalog["resources"]) == 67
     names = {item["name"] for item in catalog["resources"]}
     for required in (
         "Corey AI SEO",
@@ -105,6 +113,9 @@ def test_catalog_has_specialized_geo_and_platform_resources() -> None:
         "Stripe MCP",
         "ScrapeCreators Social Research Skills",
         "Social Media Skills",
+        "Claude SEO",
+        "Claude SEO DataForSEO extension",
+        "Claude SEO Firecrawl extension",
     ):
         assert required in names
 
